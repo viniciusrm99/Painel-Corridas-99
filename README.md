@@ -1,132 +1,77 @@
-## Projeto de BI: Análise do Brasileirão (Série A)
+https://www.youtube.com/watch?v=Kp7BlmfFhz4 1:09:13 
+
+# 🚖 Análise de Viagens Uber – Projeto Power BI
+
+Dashboard interativo em Power BI analisando dados de viagens da Uber para descobrir tendências de reservas, insights de receita e eficiência das viagens, ajudando stakeholders a tomar **decisões baseadas em dados**.  
 
 ---
 
-### 🤖 Objetivo do Projeto
+## 📊 Dashboard 1: Análise Geral  
+Analisa dados de viagens para identificar tendências, geração de receita e eficiência das viagens.
 
-Criar um dashboard interativo que analisa o desempenho dos times do Brasileirão, comparando:
+### **Principais KPIs**
+- 📌 **Total de Reservas** – Total de viagens realizadas em um período.  
+- 💰 **Valor Total das Reservas** – Receita total de todas as viagens.  
+- 📏 **Valor Médio por Reserva** – Receita média por viagem.  
+- 🛣 **Distância Total das Viagens** – Distância total percorrida em todas as viagens.  
+- 📍 **Distância Média por Viagem** – Distância média percorrida por viagem.  
+- ⏱ **Tempo Médio de Viagem** – Duração média das viagens.  
 
-* Gols marcados e sofridos
-* Aproveitamento em casa/fora
-* Artilheiros
-* Classificação rodada a rodada
-* Tendências e destaques por time
+**✅ Resultados Esperados:**  
+✔ Identificar tendências em reservas e geração de receita.  
+✔ Analisar a eficiência das viagens (distância e duração).  
+✔ Comparar valores de reservas e padrões de viagem ao longo do tempo.  
+✔ Apoiar otimização de preços e aumentar a satisfação do cliente.  
 
----
-
-### 📁 Fontes de Dados
-
-* Kaggle: "Brazilian Serie A Matches Dataset (2012-2023)"
-* Alternativas: FBref, Footystats, Transfermarkt
-
----
-
-### 📅 Importação dos Dados
-
-No Power BI:
-
-1. Obter dados > Arquivo CSV/Excel
-2. Importar as tabelas:
-
-   * Matches (dados dos jogos)
-   * Teams (opcional: informações dos times)
-   * Players (opcional: para detalhar artilharia)
+**📈 Gráficos e Funcionalidades:**  
+- **Selector de Métricas** 🎛 – Alterna entre Total de Reservas, Valor Total das Reservas e Distância Total das Viagens usando uma tabela desconectada.  
+- **Por Tipo de Pagamento** 💳 (Cartão, Dinheiro, Carteira, etc.)  
+- **Por Tipo de Viagem** 🌞🌙 (Dia/Noite)  
+- **Título Dinâmico** ✨ – Atualiza conforme a métrica selecionada.  
+- **Slicers Interativos** 🗂 – Filtragem por Data, Cidade e outros para análises detalhadas.  
+- **Tooltips** 🛠 – Mostra detalhes adicionais como Valor Médio por Reserva ou Distância da Viagem.  
 
 ---
 
-### 🧼 Limpeza e Tratamento dos Dados (Power Query)
-
-* Renomear colunas
-* Padronizar nomes dos times
-* Converter tipos de dados (data, números)
-* Criar colunas derivadas:
-
-  * Resultado do jogo (Vitória / Empate / Derrota)
-  * Mandante venceu? (if home\_goals > away\_goals then "Sim"...)
-  * Gols totais
-  * Diferença de gols
+## 🚘 Análise por Tipo de Veículo  
+- Tabela em Grid (Matrix) para analisar KPIs por Tipo de Veículo.  
+- Formatação condicional para destacar valores altos e baixos.  
+- Permite ordenar e filtrar para interações do usuário.  
 
 ---
 
-### 🧬 Modelagem dos Dados
-
-**Tabelas:**
-
-* Fato: Fato\_Jogos
-* Dimensão: Dim\_Times, Dim\_Data, Dim\_Campeonato
-
-**Relacionamentos:**
-
-* Fato\_Jogos\[time\_mandante\_id] ↔ Dim\_Times\[ID]
-* Fato\_Jogos\[data] ↔ Dim\_Data\[data]
+## 📅 Reservas por Dia  
+- Identificação de tendências e variações diárias.  
+- Reconhecimento de dias de pico e fora de pico.  
+- Avaliação do impacto de fatores externos (feriados, eventos, clima) na demanda.  
 
 ---
 
-### 🧩 Criação de Medidas (DAX)
-
-* Total de Gols:
-
-```DAX
-Total Gols = SUM(Fato_Jogos[home_goals]) + SUM(Fato_Jogos[away_goals])
-```
-
-* Aproveitamento (%):
-
-```DAX
-Aproveitamento = DIVIDE([Pontos], [Jogos])*100
-```
-
-* Vitórias, Derrotas, Empates por time
-* Gols marcados / sofridos por local (casa x fora)
+## 📍 Análise de Localização  
+- **Pontos de Partida Mais Frequentes** – Otimização de disponibilidade de motoristas.  
+- **Pontos de Chegada Mais Frequentes** – Análise de demanda e estratégias de preço dinâmico.  
+- **Viagem Mais Longa** – Identificação de outliers e otimização de tarifas.  
+- **Top 5 Locais por Reservas** – Previsão de demanda e alocação de motoristas.  
+- **Veículo Mais Preferido por Local de Partida** – Distribuição estratégica de veículos.  
 
 ---
 
-### 📊 Visualizações Sugeridas (Power BI)
-
-**Página 1: Visão Geral do Campeonato**
-
-* Tabela de classificação com filtro de temporada
-* Cartões: total de gols, média por jogo
-* Barras horizontais: gols por time
-
-**Página 2: Análise por Time**
-
-* Seletor de time
-* Linha: evolução na classificação
-* Coluna: gols marcados x sofridos
-
-**Página 3: Mandante vs Visitante**
-
-* Comparativo de desempenho
-* Gráfico de pizza: vitórias casa x fora
-
-**Página 4: Artilharia**
-
-* Top 10 artilheiros
-* Eficiência: gols por minuto jogado
+## ⏰ Dashboard 2: Análise Temporal  
+- Seleção dinâmica de métricas para atualizar todos os gráficos.  
+- **Por Hora de Pickup (intervalos de 10 min)** – Identificação de períodos de pico.  
+- **Por Dia da Semana** – Comparação entre dias úteis e finais de semana.  
+- **Heatmap Hora x Dia** – Destaca horários de maior demanda.  
 
 ---
 
-### 💡 Possíveis Insights
-
-* Time com melhor desempenho fora de casa
-* Time que mais vira jogo
-* Jogo com mais gols
-* Time que mais toma gol no fim do jogo
-* Rodada com mais empates
+## 📋 Dashboard 3: Detalhes  
+- Grid com detalhes completos das viagens.  
+- Funcionalidade de Drill-Through – acessar registros detalhados a partir de seleções em outros dashboards.  
+- Bookmark "Visualizar Todos os Dados" para alternar entre dados filtrados e dataset completo.  
 
 ---
 
-### 🏰 Extras para valorizar o projeto
-
-* Ícones dos times
-* Slicers de temporada, rodada, time
-* Página "Sobre o Projeto" com contexto, fonte dos dados e objetivo
-
----
-
-### 💥 Finalização
-
-* Publicar no Power BI Service ou exportar como PDF
-* Compartilhar no LinkedIn com texto e insights
-* (Opcional) Postar no GitHub com PBIX + README explicando o projeto
+## ⚙️ Funcionalidades Extras  
+- **Bookmark “Detalhes dos Dados”** 📝 – Explicação de métricas e fontes de dados.  
+- **Botão Limpar Filtros** 🔄 – Reset rápido de todos os slicers.  
+- **Download de Dados** 📥 – Exportação em CSV ou Excel via Power Automate ou funcionalidade nativa do Power BI.
