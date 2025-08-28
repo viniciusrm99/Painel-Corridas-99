@@ -36,4 +36,44 @@ Analisou dados de corridas para identificar tendências, geração de receita e 
 ---
 
 ## 🚘 Análise por Tipo de Veículo  
-- Tabela em Grid (Matrix) para analisar KP
+- Tabela em Grid (Matrix) para analisar KPIs por Tipo de Veículo.  
+- Formatação condicional destacou valores altos e baixos.  
+- Usuários puderam ordenar e filtrar para interações personalizadas.  
+
+---
+
+## 📅 Reservas por Dia  
+- Foram identificadas tendências e variações diárias.  
+- Foram reconhecidos dias de pico e fora de pico.  
+- Avaliou-se o impacto de fatores externos (feriados, eventos, clima) na demanda.  
+
+---
+
+## 📍 Análise de Localização  
+- **Pontos de Partida Mais Frequentes** – Apoiaram otimização de disponibilidade de motoristas.  
+- **Pontos de Chegada Mais Frequentes** – Ajudaram a entender a demanda e estratégias de preço dinâmico.  
+- **Viagem Mais Longa** – Permitiu identificar outliers e otimizar tarifas.  
+- **Top 5 Locais por Reservas** – Apoiaram previsões de demanda e alocação de motoristas.  
+- **Veículo Mais Preferido por Local de Partida** – Facilitou a distribuição estratégica de veículos.  
+
+---
+
+## ⏰ Dashboard 2: Análise Temporal  
+- Seleção dinâmica de métricas atualizou todos os gráficos.  
+- **Por Hora de Pickup (intervalos de 10 min)** – Identificaram-se períodos de pico.  
+- **Por Dia da Semana** – Foi possível comparar entre dias úteis e finais de semana.  
+- **Heatmap Hora x Dia** – Destacou horários de maior demanda.  
+
+---
+
+## 📋 Dashboard 3: Detalhes  
+- Grid apresentou detalhes completos das corridas.  
+- Funcionalidade de Drill-Through permitiu acessar registros detalhados a partir de seleções em outros dashboards.  
+- Bookmark "Visualizar Todos os Dados" possibilitou alternar entre dados filtrados e dataset completo.  
+
+---
+
+## ⚙️ Funcionalidades Extras  
+- **Bookmark “Detalhes dos Dados”** 📝 – Explicou métricas e fontes de dados.  
+- **Botão Limpar Filtros** 🔄 – Permitiu reset rápido de todos os slicers.  
+- **Download de Dados** 📥 – Possibilitou exportação em CSV ou Excel via Power Automate ou funcionalidade nativa do Power BI.  
