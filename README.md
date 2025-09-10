@@ -1,79 +1,42 @@
-# 🚖 **Painel de Corridas – 99**
+# 🚖 Painel de Corridas – 99
 
-Dashboard interativo em Power BI analisando dados de corridas da **99** para descobrir tendências de reservas, insights de receita e eficiência das viagens, ajudando stakeholders a tomar **decisões baseadas em dados**.  
+Dashboard interativo em **Power BI** analisando dados de corridas da **99**, trazendo insights sobre **reservas, receita, eficiência das viagens** e **comportamento de usuários**.
 
----
+Permite aos gestores **identificar tendências**, **otimizar operações**, **planejar a alocação de frota** e **tomar decisões estratégicas** baseadas em dados reais.
 
-📌 **[Aqui entra o GIF do painel]**  
-
----
-
-## 📊 Dashboard 1: Análise Geral  
-Analisou dados de corridas para identificar tendências, geração de receita e eficiência das viagens.  
-
-### **Principais KPIs**  
-- 📌 **Total de Reservas** – Total de viagens realizadas em um período.  
-- 💰 **Valor Total das Reservas** – Receita total de todas as corridas.  
-- 📏 **Valor Médio por Reserva** – Receita média por viagem.  
-- 🛣 **Distância Total das Viagens** – Distância total percorrida em todas as corridas.  
-- 📍 **Distância Média por Viagem** – Distância média percorrida por corrida.  
-- ⏱ **Tempo Médio de Viagem** – Duração média das corridas.  
-
-**✅ Resultados Encontrados:**  
-✔ Foram identificadas tendências em reservas e geração de receita.  
-✔ Foi possível analisar a eficiência das viagens (distância e duração).  
-✔ Compararam-se valores de reservas e padrões de viagem ao longo do tempo.  
-✔ Apoiaram-se decisões de otimização de preços e aumento da satisfação do cliente.  
-
-**📈 Gráficos e Funcionalidades:**  
-- **Selector de Métricas** 🎛 – Alternava entre Total de Reservas, Valor Total das Reservas e Distância Total das Viagens usando uma tabela desconectada.  
-- **Por Tipo de Pagamento** 💳 (Cartão, Dinheiro, Carteira, etc.)  
-- **Por Tipo de Viagem** 🌞🌙 (Dia/Noite)  
-- **Título Dinâmico** ✨ – Atualizava conforme a métrica selecionada.  
-- **Slicers Interativos** 🗂 – Permitiram filtragem por Data, Cidade e outros para análises detalhadas.  
-- **Tooltips** 🛠 – Mostraram detalhes adicionais como Valor Médio por Reserva ou Distância da Viagem.  
+Inclui análises detalhadas por **tipo de veículo**, **horário**, **localização** e **tipo de viagem**, além de funcionalidades interativas como **Drill-Through**, **filtros** e **bookmarks**, permitindo explorar os dados de forma dinâmica.
 
 ---
 
-## 🚘 Análise por Tipo de Veículo  
-- Tabela em Grid (Matrix) para analisar KPIs por Tipo de Veículo.  
-- Formatação condicional destacou valores altos e baixos.  
-- Usuários puderam ordenar e filtrar para interações personalizadas.  
+## 🎥 Prévia
+[![Painel 99](Painel%2099.gif)](https://app.powerbi.com/view?r=eyJrIjoiODQyZmQwM2MtMGNkYS00ZDY2LTk1M2YtOTlmOThkY2I4YjIxIiwidCI6IjI5NjM1NGU5LTk1MmItNDgwNC05NDE0LTA3N2MzZmVjNTg5NSJ9)  
+*Clique na imagem para abrir o dashboard interativo*
 
 ---
 
-## 📅 Reservas por Dia  
-- Foram identificadas tendências e variações diárias.  
-- Foram reconhecidos dias de pico e fora de pico.  
-- Avaliou-se o impacto de fatores externos (feriados, eventos, clima) na demanda.  
+## 📊 Principais Funcionalidades e Insights
 
----
+### 🔹 Análise Geral
+- 📈 **Tendências de reservas**  
+- 💰 **Receita total e média**  
+- 🛣 **Distância e tempo médio das viagens**  
+> Auxilia no **planejamento de preço e operação**
 
-## 📍 Análise de Localização  
-- **Pontos de Partida Mais Frequentes** – Apoiaram otimização de disponibilidade de motoristas.  
-- **Pontos de Chegada Mais Frequentes** – Ajudaram a entender a demanda e estratégias de preço dinâmico.  
-- **Viagem Mais Longa** – Permitiu identificar outliers e otimizar tarifas.  
-- **Top 5 Locais por Reservas** – Apoiaram previsões de demanda e alocação de motoristas.  
-- **Veículo Mais Preferido por Local de Partida** – Facilitou a distribuição estratégica de veículos.  
+### 🔹 Análise por Tipo de Veículo
+- 🚗 **Eficiência e desempenho por tipo de veículo**  
+> Ajuda na **alocação de frota** e estratégia operacional
 
----
+### 🔹 Análise Temporal
+- 🕒 **Heatmaps por hora e dia da semana**  
+- 📅 **Identificação de períodos de pico**  
+> Permite **planejamento de disponibilidade de motoristas**
 
-## ⏰ Dashboard 2: Análise Temporal  
-- Seleção dinâmica de métricas atualizou todos os gráficos.  
-- **Por Hora de Pickup (intervalos de 10 min)** – Identificaram-se períodos de pico.  
-- **Por Dia da Semana** – Foi possível comparar entre dias úteis e finais de semana.  
-- **Heatmap Hora x Dia** – Destacou horários de maior demanda.  
+### 🔹 Análise de Localização
+- 📍 **Pontos de partida e chegada mais frequentes**  
+- 🚦 **Viagens longas e regiões de maior demanda**  
+> Suporta **decisões logísticas** e distribuição estratégica
 
----
-
-## 📋 Dashboard 3: Detalhes  
-- Grid apresentou detalhes completos das corridas.  
-- Funcionalidade de Drill-Through permitiu acessar registros detalhados a partir de seleções em outros dashboards.  
-- Bookmark "Visualizar Todos os Dados" possibilitou alternar entre dados filtrados e dataset completo.  
-
----
-
-## ⚙️ Funcionalidades Extras  
-- **Bookmark “Detalhes dos Dados”** 📝 – Explicou métricas e fontes de dados.  
-- **Botão Limpar Filtros** 🔄 – Permitiu reset rápido de todos os slicers.  
-- **Download de Dados** 📥 – Possibilitou exportação em CSV ou Excel via Power Automate ou funcionalidade nativa do Power BI.  
+### 🔹 Funcionalidades Extras
+- 🔄 **Botão para limpar filtros**  
+- ⬅️ **Botão para voltar ao GitHub**  
+- 🔍 **Drill-Through** e **Bookmarks** para navegação detalhada
