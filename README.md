@@ -9,7 +9,7 @@ Inclui análises detalhadas por **tipo de veículo**, **horário**, **localizaç
 ---
 
 ## 🎥 Prévia
-[![Painel 99](Painel%2099.gif)](https://app.powerbi.com/view?r=eyJrIjoiODQyZmQwM2MtMGNkYS00ZDY2LTk1M2YtOTlmOThkY2I4YjIxIiwidCI6IjI5NjM1NGU5LTk1MmItNDgwNC05NDE0LTA3N2MzZmVjNTg5NSJ9)  
+[![Painel 99](Painel%2099.gif)](https://app.powerbi.com/groups/me/reports/a37dc385-57e1-4fb7-87db-baca6864c3b1/b41b0eb3d2a0614b2e2a?experience=power-bi&chromeless=1&bookmarkGuid=49f592846bc175c94700)  
 *Clique na imagem para abrir o dashboard interativo*
 
 ---
