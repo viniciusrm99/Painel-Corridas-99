@@ -11,7 +11,6 @@ Inclui análises detalhadas por **tipo de veículo**, **horário**, **localizaç
 ## 🎥 Prévia
 [![Painel 99](Painel%2099.gif)](https://app.powerbi.com/groups/me/reports/a37dc385-57e1-4fb7-87db-baca6864c3b1/b41b0eb3d2a0614b2e2a?experience=power-bi&chromeless=1&bookmarkGuid=49f592846bc175c94700)  
 *Clique na imagem para abrir o dashboard interativo*
-
 ---
 
 ## 📊 Principais Funcionalidades e Insights
@@ -27,16 +26,15 @@ Inclui análises detalhadas por **tipo de veículo**, **horário**, **localizaç
 > Ajuda na **alocação de frota** e estratégia operacional
 
 ### 🔹 Análise Temporal
-- 🕒 **Heatmaps por hora e dia da semana**  
-- 📅 **Identificação de períodos de pico**  
+- 🕒 **Distribuição por horários e dias da semana**  
 > Permite **planejamento de disponibilidade de motoristas**
 
 ### 🔹 Análise de Localização
 - 📍 **Pontos de partida e chegada mais frequentes**  
-- 🚦 **Viagens longas e regiões de maior demanda**  
+- 🚦 **Regiões com maior demanda**  
 > Suporta **decisões logísticas** e distribuição estratégica
 
 ### 🔹 Funcionalidades Extras
-- 🔄 **Botão para limpar filtros**  
+- 🔄 **Limpar filtros rapidamente**  
 - ⬅️ **Botão para voltar ao GitHub**  
 - 🔍 **Drill-Through** e **Bookmarks** para navegação detalhada
